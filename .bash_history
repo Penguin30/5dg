@@ -27,3 +27,8 @@ git push origin master
 git push origin master
 git push origin master
 git status
+git add .
+git status
+git commit -m "Orders and user reg"
+git commit -m "Orders and user reg"
+git push origin master
