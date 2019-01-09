@@ -15,3 +15,15 @@ git remote -v
 git pull origin master
 composer-php7.2 install
 php7.2 artisan migrate
+git add .
+git status
+git commit -m "Orders API"
+git push origin master
+git push origin master
+git push origin master
+git push origin master
+git push origin master
+git push origin master
+git push origin master
+git push origin master
+git status
