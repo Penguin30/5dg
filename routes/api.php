@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('cruises','CruisesController@index');
+Route::post('orders','OrdersController@create');
