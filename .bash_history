@@ -32,3 +32,9 @@ git status
 git commit -m "Orders and user reg"
 git commit -m "Orders and user reg"
 git push origin master
+php7.2 artisan config:cache
+php7.2 artisan config:clear
+git add .
+git status
+git commit -m "Orders and mail after order"
+git push origin master

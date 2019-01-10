@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Order;
 use App\User;
+use App\Cruise;
 use App\Http\Controllers\UsersController;
 
 class OrdersController extends Controller
@@ -28,7 +29,11 @@ class OrdersController extends Controller
     	$order->save();
     	\Mail::send('emails.test', [], function ($m) {
             $m->from('stefaniuk3007@gmail.com', 'Cruise reservation system');
-            $m->to('stefaniuk3007@gmail.com', 'Receiver')->subject('Reservation of cruise.');
+            $m->to($data['email'], 'Receiver')->subject('Reservation of cruise.');
         });
+    }
+
+    public function check_time(Request $request, Order $order, Cruise $cruise){
+    	
     }
 }

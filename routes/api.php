@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('cruises','CruisesController@index');
 Route::post('orders','OrdersController@create');
+Route::post('check_date_time','OrdersController@check_time');
+Route::post('sign_up_agency','UsersController@SignUpAgency');
