@@ -110,7 +110,7 @@ return [
         /*
          * Set whether or not the multilingual is supported by the BREAD input.
          */
-        'enabled' => false,
+        'enabled' => true,
 
         /*
          * Set whether or not the admin layout default is RTL.
@@ -120,14 +120,18 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'english',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
-            'en',
-            //'pt',
+            'english',
+            'french',
+            'deutsch',
+            'russian',
+            'chinese',
+            'arabic'
         ],
     ],
 

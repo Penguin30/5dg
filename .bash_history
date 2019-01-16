@@ -41,3 +41,6 @@ git push origin master
 git add .
 git commit -m "Travel agency"
 git push origin master
+git add .
+git commit -m "Fixes"
+git push origin master

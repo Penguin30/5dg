@@ -7,6 +7,7 @@ use App\Order;
 use App\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
@@ -59,5 +60,14 @@ class UsersController extends Controller
         }
         $user_id = $user_order[0]->id;
         return $user_id;
+    }
+
+    public function SignInAgency(Request $request){
+        $data = $request['data'];
+        if (Auth::attempt(['email' => 'stefaniuk3007@gmail.com', 'password' => '12345'])) {
+            return 200;
+        }else{
+            return 401;
+        }
     }
 }
